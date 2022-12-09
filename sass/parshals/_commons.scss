@@ -1,0 +1,48 @@
+:root {
+  --dark: rgb(10, 32, 32);
+  --light: rgb(185, 219, 219);
+  --box-shadow: rgba(10, 32, 32, 0.8);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'CirceBold';
+  src: url('../assets/fonts/circe-bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../assets/fonts/circe.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: Circe;
+  color: var(--dark);
+  font-size: 14px;
+   @media screen and (min-width: 767.99px) {
+    font-size: 16px;
+  }  
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: CirceBold;
+}
+.container {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 767.99px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1279.99px) {
+    width: 1280px;
+  }
+}
