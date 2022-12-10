@@ -4,15 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Seliutin</title>
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header">
+        <select class="leng">
+          <option value="ua" selected>UA</option>
+          <option value="eng">ENG</option>
+        </select>
+        <div class="palitra">
+          <img src="./assert/color.jpg" alt="palitra" />
+        </div>
+        <div style="position: absolute; bottom: 1px; right: 0; overflow: hidden; width: 40px;height: 90px;">
+          <div class="color-menu">
+            <div class="first">
+              <input name="fist" type="color" value="#0A2020" />
+            </div>
+            <div class="second">
+              <input name="second" type="color" value="#B9DBDB" />
+            </div>
+          </div>
+        </div>
         <img class="header_foto" src="./assert/foto.jpg" alt="Seliutin" />
         <div>
-          <h1 class="header_head">Seliutin Roman</h1>
+          <h1 class="header_head">Селютін Роман</h1>
           <p class="header_text">JUNIOR FRONTEND DEVELOPER</p>
         </div>
       </div>
@@ -20,7 +37,7 @@
     <div class="container wrapper">
       <aside class="side_bar">
         <div class="contacts">
-          <h4>Contact information:</h4>
+          <h4 class="contacts_caption">Контакти:</h4>
           <ul>
             <li>
               <svg class="icon">
@@ -55,17 +72,17 @@
                 >GitHub</a
               >
             </li>
-            <li>
+            <li class="contacts_location">
               <svg class="icon">
                 <use href="./assert/symbol-defs.svg#location"></use>
               </svg>
-              Odesa, Ukraine
+              Одеса, Україна
             </li>
           </ul>
         </div>
 
         <div class="techskills">
-          <h4>Tech skills:</h4>
+          <h4 class="techskills_caption">Tech skills:</h4>
           <ul>
             <li>HTML5 / CSS3 / SASS</li>
             <li>Responsive / Adaptive design</li>
@@ -76,29 +93,31 @@
         </div>
 
         <div class="softskills">
-          <h4>Soft skills:</h4>
+          <h4 class="softskills_caption">Soft skills:</h4>
           <ul>
-            <li>Адекватній та дорослий</li>
-            <li>Вимогливий до себе</li>
-            <li>Визнаю помилки</li>
-            <li>Люблю вчитися та вирішувати "задачки з зірочкой"</li>
+            <li class="softskills_one">Адекватній та дорослий</li>
+            <li class="softskills_two">Вимогливий до себе</li>
+            <li class="softskills_three">Визнаю помилки</li>
+            <li class="softskills_four">
+              Люблю вчитися та вирішувати "задачки з зірочкой"
+            </li>
           </ul>
         </div>
 
         <div class="language">
-          <h4>Володіння мовами:</h4>
+          <h4 class="language_caption">Володіння мовами:</h4>
           <ul>
-            <li>Англійська - Intermediate</li>
-            <li>Укаїнська - вільно</li>
-            <li>Російська - вільно</li>
+            <li class="language_eng">Англійська - Intermediate</li>
+            <li class="language_ua">Українська - вільно</li>
+            <li class="language_ru">Російська - вільно</li>
           </ul>
         </div>
       </aside>
       <main class="main-info">
         <section>
-          <h2 class="title">Головне</h2>
+          <h2 class="hero_title">Головне</h2>
 
-          <p>
+          <p class="hero">
             Шукаю роботу Front-End developer на повний робочий час (розгляну
             неповну зайнятость). Маю впевнені знання в HTML, CSS, JavaScript,
             and React. Зараз вивичаю NODE.js, Vie, TS. Маю знання Agile/Scrum,
@@ -107,7 +126,7 @@
           </p>
         </section>
         <section>
-          <h2 class="title">Проекти</h2>
+          <h2 class="projects_title">Проекти</h2>
           <ul class="projects">
             <li>
               <a
@@ -121,16 +140,18 @@
                   alt="image"
                 />
                 <div>
-                  <p>
-                    <b>Wallet</b> - застосунок для ведення обліку власного
-                    бюджету
+                  <p class="projects_wallet">
+                    <b>Wallet</b> -
+                    <span class="projects_wallet_about"
+                      >застосунок для ведення обліку власного бюджету</span
+                    >
                   </p>
                   <p><i>[React, Redux, JS, Style Components]</i></p>
-                  <p>
+                  <p class="projects_wallet_description">
                     Вебсайт з адаптивною версткою, модальнимі вікнами, працює з
                     Local Storage та бекендом.
                   </p>
-                  <p>Командний проект.</p>
+                  <p class="projects_wallet_team">Командний проект.</p>
                 </div>
               </a>
             </li>
@@ -146,13 +167,18 @@
                   alt="image"
                 />
                 <div>
-                  <p><b>Coctails</b> - застосунок з рецептурами коктейлів</p>
-                  <p><i>[HTML, CSS, JS]</i></p>
                   <p>
+                    <b>Coctails</b> -
+                    <span class="projects_coctail_about"
+                      >застосунок з рецептурами коктейлів</span
+                    >>
+                  </p>
+                  <p><i>[HTML, CSS, JS]</i></p>
+                  <p class="projects_coctail_description">
                     Вебсайт з адаптивною версткою, модальнимі вікнами, бургер
                     меню, працює з Local Storage та ,екендом.
                   </p>
-                  <p>Командний проект.</p>
+                  <p class="projects_coctail_team">Командний проект.</p>
                 </div></a
               >
             </li>
@@ -169,14 +195,17 @@
                 />
                 <div>
                   <p>
-                    <b>Donut</b> - вебсайт кафе та школи з виготовлення пончиків
+                    <b>Donut</b> -
+                    <span class="projects_donut_about"
+                      >вебсайт кафе та школи з виготовлення пончиків</span
+                    >
                   </p>
                   <p><i>[HTML, CSS, JS]</i></p>
-                  <p>
+                  <p class="projects_donut_description">
                     Вебсайт з адаптивною версткою, модальнимі вікнами, бургер
                     меню, кастомна пагінація відгугів.
                   </p>
-                  <p>Індивідуальний проект.</p>
+                  <p class="projects_donut_team">Індивідуальний проект.</p>
                 </div>
               </a>
             </li>
@@ -188,13 +217,18 @@
               >
                 <img class="projects_img" src="./assert/ice.jpg" alt="image" />
                 <div>
-                  <p><b>IceCream - вебсайт мережі кафе</b></p>
-                  <p><i>[HTML, CSS, JS]</i></p>
                   <p>
+                    <b>IceCream</b> -
+                    <span class="projects_icecream_about"
+                      >вебсайт мережі кафе</span
+                    >>
+                  </p>
+                  <p><i>[HTML, CSS, JS]</i></p>
+                  <p class="projects_icecream_description">
                     Вебсайт з адаптивною версткою, модальнимі вікнами, бургер
                     меню.
                   </p>
-                  <p>Командний проект.</p>
+                  <p class="projects_icecream_team">Командний проект.</p>
                 </div>
               </a>
             </li>
@@ -210,41 +244,51 @@
                   alt="image"
                 />
                 <div>
-                  <p><b>WebStudio</b> - вебсайт компанії</p>
-                  <p><i>[HTML, CSS, JS]</i></p>
                   <p>
+                    <b>WebStudio</b> -
+                    <span class="projects_webstudio_about"
+                      >вебсайт компанії, що надає послуги web-дизайну</span
+                    >
+                  </p>
+                  <p><i>[HTML, CSS, JS]</i></p>
+                  <p class="projects_webstudio_description">
                     Багатосторінковий вебсайт з адаптивною версткою, модальнимі
                     вікнами, бургер меню.
                   </p>
-                  <p>Індивідуальний проект.</p>
+                  <p class="projects_webstudio_team">Індивідуальний проект.</p>
                 </div>
               </a>
             </li>
           </ul>
         </section>
         <section>
-          <h2 class="title">Досвід роботи</h2>
-          <p>
-            Донедавна професійно займався корпоративними фінансами на посадах фінансовий директор, головнйи бухгалтер. Маю значнйи доcвід в реалізації задач з автоматизації обліку, бізнес-процесів в ролі менеджера проекту на боці замовника. Maю досвід з керуванн командою до 50 членів, розумію вартість слів "результат" та "дедлайн"
+          <h2 class="experience_title">Досвід роботи</h2>
+          <p class="experience_summary">
+            Донедавна професійно займався корпоративними фінансами на посадах
+            фінансовий директор, головнйи бухгалтер. Маю значнйи доcвід в
+            реалізації задач з автоматизації обліку, бізнес-процесів в ролі
+            менеджера проекту на боці замовника. Maю досвід з керуванн командою
+            до 50 членів, розумію вартість слів "результат" та "дедлайн"
           </p>
+
+          <p class="experience_company_caption">Компанії з якими працював:</p>
           <ul>
-            Компаншї з якими працював:
-            <li>
+            <li class="experience_tp">
               ТОВ «Телекарт-Прилад» (м. Одеса) (завод з виробництва електронної
               продукції). Обіймав посаду фінансового директора і головного
               бухгалтера (за сумісництвом).
             </li>
-            <li>
+            <li class="experience_mc">
               ТОВ «Мед-Сервіс» (м. Дніпро) (національна мережа фармацевтичного
               рітейла). Обіймав посаду фінансового директора. В цієї компанії
               втілив цілу низку проектів обліку та корпоративного управління.
             </li>
-            <li>
+            <li class="experience_fram">
               ТОВ «ФРА-М» (м. Донецьк) (національний дистрібутор фармакологічної
               продукції)ю Обіймав посаду фінансового директора. Велику частину
               роботі займало управління власним та запозиченим капіталом
             </li>
-            <li>
+            <li class="experience_baget">
               ТОВ «Ювелірний завод «Багет» (м. Донецьк) (великий Український
               виробник ювелірних виробів). Обіймав посаду фінансового директора.
               Тут втілив низку проектів з обліку виробництва.
@@ -252,14 +296,17 @@
           </ul>
         </section>
         <section>
-          <h2 class="title">Освіта</h2>
+          <h2 class="education_title">Освіта</h2>
           <ul class="education">
-            <li>(2023) IT школа GoIT</li>
-            <li>(2015) Курсы 1С:Програміст.</li>
-            <li>(1995-2000) Донецький політех. Eкономіка підприємства</li>
+            <li class="education_goit">(2023) IT школа GoIT.</li>
+            <li class="education_1c">(2015) Курсы 1С:Програміст.</li>
+            <li class="education_univer">
+              (1995-2000) Донецький політех. Eкономіка підприємства.
+            </li>
           </ul>
         </section>
       </main>
     </div>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>

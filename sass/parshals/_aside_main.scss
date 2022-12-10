@@ -1,7 +1,7 @@
 .container.wrapper {
   display: flex;
   gap: 10px;
-
+  padding-bottom: 20px;
   @media screen and (min-width: 767.99px) {
     gap: 20px;
   }
@@ -23,7 +23,10 @@
     width: 180px;
   }
 }
-.side_bar h4 {
+.contacts_caption,
+.techskills_caption,
+.softskills_caption,
+.language_caption {
   font-size: 14px;
   margin: 16px -8px 8px -8px;
   padding: 4px 8px;
@@ -31,9 +34,12 @@
   color: var(--dark);
   background-color: var(--light);
 }
+.side_bar ul {
+  padding-left: 12px;
+}
 .side_bar li {
   font-size: 12px;
-  list-style: inside circle;
+  list-style: circle;
   margin-bottom: 4px;
   @media screen and (min-width: 767.99px) {
     font-size: 14px;
@@ -45,6 +51,9 @@
   align-items: center;
   gap: 4px;
 }
+.contacts ul {
+  padding-left: 0px;
+}
 .icon {
   width: 12px;
   height: 12px;
@@ -54,7 +63,10 @@
 .main-info li {
   list-style: inside;
 }
-.title {
+.hero_title,
+.projects_title,
+.experience_title,
+.education_title {
   margin: 16px 0px 12px -5px;
   padding: 4px 20px;
   background-color: var(--light);
@@ -68,14 +80,21 @@
 }
 .projects li {
   list-style: none;
+  &:not(&:last-child) {
+    border-bottom: 1px solid var(--dark);
+  }
 }
 .projects_img {
   width: 150px;
 }
 .projects_link {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 5px;
   padding: 5px;
-  border-bottom: 1px solid var(--dark);
+  @media screen and (min-width: 767.99px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
