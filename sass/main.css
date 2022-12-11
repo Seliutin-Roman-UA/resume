@@ -87,7 +87,7 @@ h4 {
   width: 30px;
   height: 15px;
   color: transparent;
-  background-image: url("../../assert/ua.jpg");
+  background-image: url("../assert/ua.jpg");
   background-size: contain;
   border: none;
   cursor: pointer;
