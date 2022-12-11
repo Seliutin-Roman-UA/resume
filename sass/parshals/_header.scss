@@ -6,7 +6,7 @@
   width: 30px;
   height: 15px;
   color: transparent;
-  background-image: url('../../assert/ua.jpg');
+  background-image: url('../assert/ua.jpg');
   background-size: contain;
   border: none;
   cursor: pointer;
@@ -15,10 +15,13 @@
     outline: none;
   }
 }
+.flag_uk {
+  background-image: url('../assert/eng.jpg');
+}
 .palitra {
   position: absolute;
-  bottom: 2px;
-  right: 5px;
+  bottom: 3px;
+  right: 7px;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -32,14 +35,19 @@
   position: absolute;
   bottom: 26px;
   right: 1px;
-  background-color: #f5f5dc;
+  background-color: var(--dark);
+  border: 2px solid var(--light);
   border-radius: 12px;
   padding: 4px;
-  transform: translateY(55px);
+  transform: translateY(56px);
   transition: transform 500ms;
 }
-.move{transform: translateY(0px);}
-.rotate {transform: rotate(360deg);}
+.move {
+  transform: translateY(0px);
+}
+.rotate {
+  transform: rotate(360deg);
+}
 .first,
 .second {
   width: 24px;
@@ -53,6 +61,12 @@
 .first + .second {
   margin-top: 2px;
 }
+.first {
+  border: 1px solid var(--light);
+}
+// .second {
+//   border: 2px solid var(--dark);
+// }
 .color-menu input {
   width: 40px;
   height: 40px;
@@ -64,9 +78,6 @@
   flex-grow: 0;
 }
 
-.flag_uk {
-  background-image: url('../../assert/eng.jpg');
-}
 [value='ua'],
 [value='eng'] {
   color: var(--light);

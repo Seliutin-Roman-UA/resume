@@ -22,8 +22,8 @@ img {
 }
 
 :root {
-  --dark: rgb(10, 32, 32);
-  --light: rgb(185, 219, 219);
+  --dark: hsl(180, 52%, 8%);
+  --light: #b9dbdb;
   --box-shadow: rgba(0, 0, 0, 0.8);
 }
 
@@ -96,10 +96,14 @@ h4 {
   outline: none;
 }
 
+.flag_uk {
+  background-image: url("../assert/eng.jpg");
+}
+
 .palitra {
   position: absolute;
-  bottom: 2px;
-  right: 5px;
+  bottom: 3px;
+  right: 7px;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -114,10 +118,11 @@ h4 {
   position: absolute;
   bottom: 26px;
   right: 1px;
-  background-color: var(--light);
+  background-color: var(--dark);
+  border: 2px solid var(--light);
   border-radius: 12px;
   padding: 4px;
-  transform: translateY(55px);
+  transform: translateY(56px);
   transition: transform 500ms;
 }
 
@@ -144,6 +149,10 @@ h4 {
   margin-top: 2px;
 }
 
+.first {
+  border: 1px solid var(--light);
+}
+
 .color-menu input {
   width: 40px;
   height: 40px;
@@ -153,10 +162,6 @@ h4 {
   border-radius: 5px;
   flex-shrink: 0;
   flex-grow: 0;
-}
-
-.flag_uk {
-  background-image: url("../assert/eng.jpg");
 }
 
 [value=ua],

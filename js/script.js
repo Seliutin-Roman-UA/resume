@@ -25,3 +25,4 @@ document.querySelector('.palitra').addEventListener('click', () => {
   document.querySelector('.color-menu').classList.toggle('move');
   document.querySelector('.palitra').classList.toggle('rotate');
 });
+

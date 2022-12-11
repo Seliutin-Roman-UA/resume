@@ -1,7 +1,7 @@
 :root {
-  --dark: rgb(10, 32, 32);
-  --light: rgb(185, 219, 219);
-  --box-shadow: rgba(0, 0, 0, 0.8);
+  --dark: hsl(180, 52%, 8%);
+  --light: #b9dbdb;
+    --box-shadow: rgba(0, 0, 0, 0.8);
 }
 *,
 *::after,
@@ -25,9 +25,9 @@ body {
   font-family: Circe;
   color: var(--dark);
   font-size: 14px;
-   @media screen and (min-width: 767.99px) {
+  @media screen and (min-width: 767.99px) {
     font-size: 16px;
-  }  
+  }
 }
 h1,
 h2,
