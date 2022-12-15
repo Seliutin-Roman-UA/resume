@@ -45,4 +45,5 @@ h4 {
   @media screen and (min-width: 1279.99px) {
     width: 1280px;
   }
+  @media print {width: 768px;}
 }

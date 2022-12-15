@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seliutin</title>
     <link rel="stylesheet" href="./sass/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <header class="header">
       <div class="container header">
+        <img class="header_foto" src="./assert/foto.jpg" alt="Seliutin" />
+        <div class="header_main">
         <select class="leng">
           <option value="ua" selected>UA</option>
           <option value="eng">ENG</option>
         </select>
         <div class="palitra">
-          <img src="./assert/color.jpg" alt="palitra" />
+          <img src="./assert/color.jpg" alt="palitra" width="22" height="22"/>
         </div>
-        <div style="position: absolute; bottom: 1px; right: 0; overflow: hidden; width: 40px;height: 90px;">
-          <div class="color-menu">
-            <div class="first">
-              <input name="fist" type="color" value="#0A2020" />
-            </div>
-            <div class="second">
-              <input name="second" type="color" value="#B9DBDB" />
-            </div>
+
+        <div class="printer_wraper" title="click to print or save in PDF">
+          <svg class="printer_svg">
+            <use href="./assert/symbol-defs.svg#printer"></use>
+          </svg>
+        </div>        
+        <div class="color-menu">
+          <div class="first">
+            <input name="fist" type="color" value="#0A2020" />
           </div>
-        </div>
-        <img class="header_foto" src="./assert/foto.jpg" alt="Seliutin" />
-        <div>
+          <div class="second">
+            <input name="second" type="color" value="#B9DBDB" />
+          </div>          
+        </div>        
+        
           <h1 class="header_head">Селютін Роман</h1>
           <p class="header_text">JUNIOR FRONTEND DEVELOPER</p>
         </div>
@@ -128,6 +136,7 @@
         <section>
           <h2 class="projects_title">Проекти</h2>
           <ul class="projects">
+
             <li>
               <a
                 class="projects_link"
@@ -149,39 +158,113 @@
                   <p><i>[React, Redux, JS, Style Components]</i></p>
                   <p class="projects_wallet_description">
                     Вебсайт з адаптивною версткою, модальнимі вікнами, працює з
-                    Local Storage та бекендом.
+                    Local Storage та бекендом. Виконував частину зі статистикою та курсами валют.
                   </p>
-                  <p class="projects_wallet_team">Командний проект.</p>
+                  <p class="projects_wallet_team">Командний проект. Розробляв сторинку статистики та курсів валют.</p>
                 </div>
               </a>
+              <div class="github_link">
+                <svg class="icon project">
+                  <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+                </svg>                
+                <a href="https://github.com/Seliutin-Roman-UA/Wallet" target="_blank">GitHub repository</a>
+              </div>
+              </li>
+
+            <li>
+              <a class="projects_link" href="https://seliutin-roman-ua.github.io/goit-react-hw-05-movies/" target="_blank">
+                <img class="projects_img" src="./assert/filmoteka_react.JPG" alt="image" />
+                <div>
+                  <p>
+                    <b>Filmoteka</b> -
+                    <span class="projects_filmreact_about">легкий та швидкий застосунок з пошуком фільмів та ТV-шоу серед бази з 20000 фільмів</span>>
+                  </p>
+                  <p><i>[React, Redux, JS]</i></p>
+                  <p class="projects_filmreact_description">
+                    Застосунок, що використовує переваги React-у, вебсайт з адаптивною версткою, модальнимі вікнами, працює з бекендом.
+                  </p>
+                  <p class="projects_filmreact_team">Індивідуальний проект.</p>
+                </div>
+              </a>
+                <div class="github_link">
+                  <svg class="icon project">
+                    <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+                  </svg>
+                  <a href="https://github.com/Seliutin-Roman-UA/goit-react-hw-05-movies" target="_blank">GitHub repository</a>
+                </div>
             </li>
+
+
+            <li>
+            <a
+              class="projects_link"
+              href="https://seliutin-roman-ua.github.io/cocktails/"
+              target="_blank"
+            >
+              <img
+                class="projects_img"
+                src="./assert/coctails.jpg"
+                alt="image"
+              />
+              <div>
+                <p>
+                  <b>Cocktails</b> -
+                  <span class="projects_coctail_about"
+                    >застосунок з рецептурами коктейлів</span
+                  >>
+                </p>
+                <p><i>[HTML, CSS, JS]</i></p>
+                <p class="projects_coctail_description">
+                  Вебсайт з адаптивною версткою, модальнимі вікнами, бургер
+                  меню, працює з Local Storage та бекендом.
+                </p>
+                <p class="projects_coctail_team">Командний проект. Написав більшу частину JS-коду, запити до бекенду, створення розмітки в JS-коді, опрцювання фільтрацій
+                за різними умовами.</p>
+              </div>
+              </a>
+              <div class="github_link">
+                <svg class="icon project">
+                  <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+                </svg>
+                <a href="https://github.com/Seliutin-Roman-UA/cocktails" target="_blank">GitHub repository</a>
+              </div>
+            </li>
+
+
             <li>
               <a
                 class="projects_link"
-                href="https://seliutin-roman-ua.github.io/cocktails/"
+                href="https://github.com/Seliutin-Roman-UA/filmoteka"
                 target="_blank"
               >
                 <img
                   class="projects_img"
-                  src="./assert/coctails.jpg"
+                  src="./assert/filmoteka_vanila.JPG"
                   alt="image"
                 />
                 <div>
                   <p>
-                    <b>Coctails</b> -
-                    <span class="projects_coctail_about"
-                      >застосунок з рецептурами коктейлів</span
+                    <b>Filmoteka</b> -
+                    <span class="projects_filmvanila_about"
+                      >застосунок для відслідковування трендів та рейтингів фільмів з можливостю пошуку </span
                     >>
                   </p>
                   <p><i>[HTML, CSS, JS]</i></p>
-                  <p class="projects_coctail_description">
-                    Вебсайт з адаптивною версткою, модальнимі вікнами, бургер
-                    меню, працює з Local Storage та бекендом.
+                  <p class="projects_filmvanila_description">
+                    Вебсайт з адаптивною версткою, модальнимі вікнами, працює з Local Storage та бекендом.
                   </p>
-                  <p class="projects_coctail_team">Командний проект.</p>
-                </div></a
-              >
+                  <p class="projects_filmvanila_team">Індивідуальний проект.</p>
+                </div>               
+                </a>
+                <div class="github_link">
+                  <svg class="icon project">
+                    <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+                  </svg>
+                  <a href="https://github.com/Seliutin-Roman-UA/filmoteka" target="_blank">GitHub repository</a>
+                </div>
             </li>
+
+
             <li>
               <a
                 class="projects_link"
@@ -208,7 +291,15 @@
                   <p class="projects_donut_team">Індивідуальний проект.</p>
                 </div>
               </a>
+              <div class="github_link">
+                <svg class="icon project">
+                  <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+                </svg>
+                <a href="https://github.com/Seliutin-Roman-UA/donut" target="_blank">GitHub repository</a>
+              </div>
             </li>
+
+
             <li>
               <a
                 class="projects_link"
@@ -228,10 +319,18 @@
                     Вебсайт з адаптивною версткою, модальнимі вікнами, бургер
                     меню.
                   </p>
-                  <p class="projects_icecream_team">Командний проект.</p>
+                  <p class="projects_icecream_team">Командний проект. Розробляв секцію відгуків та анимацію / форма заказів.</p>
                 </div>
+                <div class="github_link">
               </a>
+              <svg class="icon project">
+                <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+              </svg>
+              <a href="https://github.com/Seliutin-Roman-UA/IceCream" target="_blank">GitHub repository</a>
+              </div>
             </li>
+
+
             <li>
               <a
                 class="projects_link"
@@ -258,6 +357,12 @@
                   <p class="projects_webstudio_team">Індивідуальний проект.</p>
                 </div>
               </a>
+              <div class="github_link">
+                <svg class="icon project">
+                  <use href="./assert/symbol-defs.svg#github" target="_blank"></use>
+                </svg>
+                <a href="https://github.com/Seliutin-Roman-UA/goit-markup-hw-08" target="_blank">GitHub repository</a>
+              </div>
             </li>
           </ul>
         </section>
@@ -306,6 +411,7 @@
           </ul>
         </section>
       </main>
+      
     </div>
     <script src="./js/script.js" type="module"></script>
   </body>

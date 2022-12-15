@@ -6,23 +6,30 @@ function changeLanguage(len) {
     document.querySelector(`.${i}`).textContent = content[i][len];
   }
 }
-document.querySelector('.leng').addEventListener('change', e => {
-  document.querySelector('.leng').classList.toggle('flag_uk');
+
+const ref = {
+  language: document.querySelector('.leng'),
+  darkColor: document.querySelector("[name='fist']"),
+  lightColor: document.querySelector("[name='second']"),
+  palitra: document.querySelector('.palitra'),
+  colorMenu: document.querySelector('.color-menu'),
+  printer: document.querySelector('.printer_wraper'),
+}
+
+ref.language.addEventListener('change', e => {
+  ref.language.classList.toggle('flag_uk');
   changeLanguage(e.target.value);
 });
-
-document
-  .querySelector("[name='fist']")
-  .addEventListener('input', e =>
+ref.darkColor.addEventListener('input', e =>
     document.documentElement.style.setProperty('--dark', e.target.value)
   );
-document
-  .querySelector("[name='second']")
-  .addEventListener('input', e =>
+ref.lightColor.addEventListener('input', e =>
     document.documentElement.style.setProperty('--light', e.target.value)
   );
-document.querySelector('.palitra').addEventListener('click', () => {
-  document.querySelector('.color-menu').classList.toggle('move');
-  document.querySelector('.palitra').classList.toggle('rotate');
+ref.palitra.addEventListener('click', () => {
+  ref.colorMenu.classList.toggle('move');
+  ref.palitra.classList.toggle('rotate');
 });
-
+ref.printer.addEventListener('click', () => {
+  window.print()
+});

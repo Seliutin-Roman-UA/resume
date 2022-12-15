@@ -72,12 +72,25 @@ export const content = {
     eng: 'an application for keeping track of your own budget',
   },
   projects_wallet_description: {
-    ua: 'projects_wallet_description',
-    eng: 'Вебсайт з адаптивною версткою, модальнимі вікнами, працює з Local Storage та бекендом.',
+    ua: 'Вебсайт з адаптивною версткою, модальнимі вікнами, працює з Local Storage та бекендом.',
+    eng: 'Website with responsive layout, modal windows, works with Localstorage and backend.',
   },
   projects_wallet_team: {
-    ua: 'Командний проект.',
-    eng: 'Team project.',
+    ua: 'Командний проект. Розробляв сторинку статистики та курсів валют.',
+    eng: 'Team project. Developed a page of statistics and exchange rates.',
+  },
+
+  projects_filmreact_about: {
+    ua: 'легкий та швидкий застосунок з пошуком фільмів та ТV-шоу серед бази з 20000 фільмів',
+    eng: 'easy and fast application to search for movies and TV shows from a database of 20,000 movies',
+  },
+  projects_filmreact_description: {
+    ua: 'Застосунок, що використовує переваги React-у, вебсайт з адаптивною версткою, модальнимі вікнами, працює з бекендом.',
+    eng: 'An application that uses the advantages of React, a website with an adaptive layout, modal windows, works with the backend.',
+  },
+  projects_filmreact_team: {
+    ua: 'Індивідуальний проект.',
+    eng: 'Individual project.',
   },
   projects_coctail_about: {
     ua: 'застосунок з рецептурами коктейлів',
@@ -88,9 +101,21 @@ export const content = {
     eng: 'Website with responsive layout, modal windows, burger menu, works with Local Storage and backend.',
   },
   projects_coctail_team: {
-    ua: 'Командний проект.',
-    eng: 'Team project.',
+    ua: 'Командний проект. Написав більшу частину JS-коду, запити до бекенду, створення розмітки в JS-коді, опрцювання фільтрацій за різними умовами. ',
+    eng: 'Team project. Wrote most of the JS code, requested the backend, created markup in the JS code, and implemented filtering according to various conditions.',
   },
+  projects_filmvanila_about: {
+    ua: 'застосунок для відслідковування трендів та рейтингів фільмів з можливостю пошуку',
+    eng: 'a searchable app for tracking movie trends and ratings',
+  },
+  projects_filmvanila_description: {
+    ua: 'Вебсайт з адаптивною версткою, модальнимі вікнами, працює з Local Storage та бекендом.',
+    eng: 'Website with responsive layout, modal windows, works with Localstorage and backend.',
+  },
+  projects_filmvanila_team: {
+    ua: 'Індивідуальний проект.',
+    eng: 'Individual project.',
+  },  
   projects_donut_about: {
     ua: 'вебсайт кафе та школи з виготовлення пончиків',
     eng: 'the website of the cafe and donut making trainings',
@@ -112,8 +137,8 @@ export const content = {
     eng: 'Responsive layout website, modal windows, burger menu, custom feedback pagination.',
   },
   projects_icecream_team: {
-    ua: 'Командний проект.',
-    eng: 'Team project.',
+    ua: 'Командний проект. Розробляв секцію відгуків та анимацію / форма заказів.',
+    eng: 'Team project. Developed feedback section and animation / order form.',
   },
   projects_webstudio_about: {
     ua: 'вебсайт компанії, що надає послуги web-дизайну',
@@ -124,8 +149,8 @@ export const content = {
     eng: 'Multi-page website with responsive layout, modal windows, burger menu.',
   },
   projects_webstudio_team: {
-    ua: 'Командний проект.',
-    eng: 'Team project.',
+     ua: 'Індивідуальний проект.',
+    eng: 'Individual project.',
   },
   experience_title: {
     ua: 'Досвід роботи',

@@ -78,16 +78,22 @@ h4 {
     width: 1280px;
   }
 }
+@media print {
+  .container {
+    width: 768px;
+  }
+}
 
 .leng {
   position: absolute;
   display: block;
-  top: 5px;
+  top: 8px;
   right: 5px;
   width: 30px;
   height: 15px;
   color: transparent;
   background-image: url("../assert/ua.jpg");
+  border-radius: 5px;
   background-size: contain;
   border: none;
   cursor: pointer;
@@ -95,17 +101,53 @@ h4 {
 .leng:focus, .leng:active {
   outline: none;
 }
+@media print {
+  .leng {
+    display: none;
+  }
+}
 
 .flag_uk {
   background-image: url("../assert/eng.jpg");
 }
 
+.printer_wraper {
+  position: absolute;
+  top: 28px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--dark);
+  border: 2px solid var(--light);
+  cursor: pointer;
+}
+@media print {
+  .printer_wraper {
+    display: none;
+  }
+}
+
+.printer_wraper {
+  top: 63px;
+}
+
+.printer_svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .palitra {
   position: absolute;
   bottom: 3px;
-  right: 7px;
-  width: 24px;
-  height: 24px;
+  right: 9px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
   border-radius: 50%;
   overflow: hidden;
@@ -113,17 +155,27 @@ h4 {
   transform: rotate(0deg);
   transition: transform 500ms;
 }
+@media print {
+  .palitra {
+    display: none;
+  }
+}
 
 .color-menu {
   position: absolute;
   bottom: 26px;
-  right: 1px;
+  right: 5px;
   background-color: var(--dark);
   border: 2px solid var(--light);
   border-radius: 12px;
-  padding: 4px;
+  padding: 4px 2px;
   transform: translateY(56px);
   transition: transform 500ms;
+}
+@media print {
+  .color-menu {
+    display: none;
+  }
 }
 
 .move {
@@ -136,8 +188,8 @@ h4 {
 
 .first,
 .second {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   overflow: hidden;
   border-radius: 50%;
   display: flex;
@@ -146,7 +198,7 @@ h4 {
 }
 
 .first + .second {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .first {
@@ -174,11 +226,9 @@ h4 {
 }
 
 .container.header {
-  position: relative;
   height: 130px;
   display: flex;
   gap: 20px;
-  padding: 8px;
   background-color: var(--dark);
   color: var(--light);
   box-shadow: 5px 0px 10px 0px var(--box-shadow);
@@ -188,25 +238,50 @@ h4 {
     gap: 40px;
   }
 }
+@media print {
+  .container.header {
+    box-shadow: none;
+    gap: 30px;
+  }
+}
 
 .header_foto {
   width: 120px;
   height: 195px;
+  margin-left: 8px;
   z-index: 1;
   margin-top: 7px;
 }
 @media screen and (min-width: 767.99px) {
   .header_foto {
-    margin-left: 8px;
+    margin-left: 16px;
   }
 }
 @media screen and (min-width: 1279.99px) {
   .header_foto {
-    margin-left: 22px;
+    margin-left: 30px;
+  }
+}
+@media print {
+  .header_foto {
+    margin-left: 30px;
+  }
+}
+
+.header_main {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+@media print {
+  .header_main {
+    border-bottom: 1px solid var(--dark);
+    height: 130px;
   }
 }
 
 .header_head {
+  margin-right: 40px;
   font-size: 20px;
   margin-top: 20px;
 }
@@ -216,6 +291,11 @@ h4 {
   }
 }
 @media screen and (min-width: 1279.99px) {
+  .header_head {
+    font-size: 36px;
+  }
+}
+@media print {
   .header_head {
     font-size: 36px;
   }
@@ -235,6 +315,15 @@ h4 {
     font-size: 20px;
   }
 }
+@media print {
+  .header_text {
+    font-size: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
 
 .container.wrapper {
   display: flex;
@@ -249,6 +338,11 @@ h4 {
 @media screen and (min-width: 1279.99px) {
   .container.wrapper {
     gap: 40px;
+  }
+}
+@media print {
+  .container.wrapper {
+    gap: 20px;
   }
 }
 
@@ -270,6 +364,13 @@ h4 {
     width: 180px;
   }
 }
+@media print {
+  .side_bar {
+    width: 180px;
+    box-shadow: none;
+    border-right: 1px solid var(--dark);
+  }
+}
 
 .contacts_caption,
 .techskills_caption,
@@ -282,6 +383,16 @@ h4 {
           text-decoration-line: underline;
   color: var(--dark);
   background-color: var(--light);
+}
+@media print {
+  .contacts_caption,
+.techskills_caption,
+.softskills_caption,
+.language_caption {
+    -webkit-print-color-adjust: exact;
+       color-adjust: exact;
+            print-color-adjust: exact;
+  }
 }
 
 .side_bar ul {
@@ -346,6 +457,16 @@ h4 {
     margin: 24px 0px 20px -20px;
   }
 }
+@media print {
+  .hero_title,
+.projects_title,
+.experience_title,
+.education_title {
+    -webkit-print-color-adjust: exact;
+       color-adjust: exact;
+            print-color-adjust: exact;
+  }
+}
 
 .projects li {
   list-style: none;
@@ -370,4 +491,20 @@ h4 {
     flex-direction: row;
     align-items: center;
   }
+}
+@media print {
+  .projects_link {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.icon.project {
+  fill: var(--dark);
+}
+
+.github_link {
+  margin-left: 8px;
+  margin-bottom: 4px;
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
